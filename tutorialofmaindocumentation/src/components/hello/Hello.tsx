@@ -9,8 +9,6 @@ export interface Props {
 // helpers
 
 const getExclamationMarks = (numChars: number) => {
-  const testArray = Array(3);
-  debugger;
   return Array(numChars + 1).join("!");
 };
 
