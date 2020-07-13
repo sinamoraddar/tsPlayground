@@ -3,10 +3,20 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+//store's imports
+import { createStore } from "redux";
+import { enthusiasm } from "./reducers/index";
+import { StoreState } from "./types/index";
+import { Provider } from "react-redux";
+//containers
+
+const store = createStore<StoreState>(enthusiasm);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root") as HTMLElement
 );

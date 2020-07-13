@@ -2,10 +2,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import SillyButton from "./components/sillyButton/SillyButton";
-import Hello from "./components/hello/Hello";
+//components
+// import Hello from "./components/hello/Hello";
+//containers
+import Hello from "./containers/hello/Hello";
 
 function App() {
-  return <Hello name={"Sina"} enthusiasmLevel={10} />;
+  return <Hello />;
 }
 
 export default App;
